@@ -9,22 +9,6 @@ int fibonacciFunction(int fibNumber)
     return fibonacciFunction(fibNumber-1) + fibonacciFunction(fibNumber-2);
 }
 
-void fibonacciSeries (int fibNumber){
-
-    int firstTerm = 0, secondTerm = 1, nextTerm;
-
-    printf("Fibonacci series: ");
-
-    for (int i = 1; i <= fibNumber; ++i)
-    {
-        printf("%d, ", firstTerm);
-        nextTerm = firstTerm + secondTerm;
-        firstTerm = secondTerm;
-        secondTerm = nextTerm;
-    }
-}
-
-
 int main ()
 
 {
@@ -43,7 +27,6 @@ int main ()
         printf("Fibonacci number: %d\n", result);
     }
 
-    fibonacciSeries(number);
-
+  
     return 0;
 }
