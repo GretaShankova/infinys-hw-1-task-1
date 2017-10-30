@@ -3,10 +3,17 @@
 
 int fibonacciFunction(int fibNumber)
 {
-    if (fibNumber <= 1) {
-        return fibNumber;
+      int firstIndex = 1, secondIndex = 1, nextIndex;
+
+
+    for (int i = 1; i <= fibIndex-2; ++i)
+    {
+        nextIndex = firstIndex + secondIndex;
+        firstIndex = secondIndex;
+        secondIndex = nextIndex;
     }
-    return fibonacciFunction(fibNumber-1) + fibonacciFunction(fibNumber-2);
+    //printf("n %d, ", nextIndex);
+    return nextIndex;
 }
 
 int main ()
